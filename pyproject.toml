@@ -1,0 +1,30 @@
+[project]
+name = "e-commerical-langgraph-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yahiaabdelhady2023", email = "handyleaf11@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "chardet>=7.6.0",
+    "fastapi[standard]>=0.141.1",
+    "html-to-markdown>=3.10.6",
+    "httpx>=0.28.1",
+    "httpx2>=2.12.0",
+    "langchain>=1.3.15",
+    "langchain-google-genai>=4.3.4",
+    "langgraph>=1.2.11",
+    "pillow>=12.3.0",
+    "pydantic>=2.13.4",
+    "pytest>=9.1.1",
+]
+
+[project.scripts]
+e-commerical-langgraph-fastapi = "e_commerical_langgraph_fastapi:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
