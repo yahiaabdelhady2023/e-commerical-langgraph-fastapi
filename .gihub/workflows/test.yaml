@@ -1,0 +1,36 @@
+name: Run Tests
+
+# Triggers the workflow on push or pull request to the main branch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Pulls your code into the runner
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up uv and Python
+      - name: Install UV
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12" 
+      
+      # 3. Install required libraries 
+      - name: Install Dependencies
+        run: uv sync
+
+      # 4. Execute the test suite
+      - name: Run Pytest
+        run: uv run pytest

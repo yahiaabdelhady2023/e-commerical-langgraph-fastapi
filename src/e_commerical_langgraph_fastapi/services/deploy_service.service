@@ -1,0 +1,17 @@
+[Unit]
+Description=deployment service using uvicorn
+after=network.target
+
+[service]
+User=ubuntu
+ExecStart=/usr/bin/python3 /home/ubuntu/.local/bin/uv run /home/ubuntu/code_projects/e-commerical-langgraph-fastapi/.venv/bin/uvicorn main:app
+Restart=Always
+
+[Install]
+wantedBy=multi-user.target
+
+
+
+
+
+
