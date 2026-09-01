@@ -1,0 +1,60 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install UV
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12" 
+      
+      - name: Install Dependencies
+        run: uv sync
+
+      - name: Build Application
+        run: uv build
+        env:
+          EMAIL: ${{ secrets.EMAIL }}
+          GEMINI_API_KEY : ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-package-distributions
+          path: dist/
+
+  test:
+    needs: build # This guarantees 'test' only runs after 'build' succeeds
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install UV
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12" 
+      
+      - name: Install Dependencies
+        run: uv sync
+
+      - name: Run Pytest
+        run: uv run pytest

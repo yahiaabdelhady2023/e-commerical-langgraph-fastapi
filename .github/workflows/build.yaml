@@ -1,46 +1,46 @@
-name: Build Project
+# name: Build Project
 
-# Triggers the workflow on push or pull request to the main branch
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+# # Triggers the workflow on push or pull request to the main branch
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      # 1. Pulls your code into the runner
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       # 1. Pulls your code into the runner
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
 
-      # 2. Set up uv and Python
-      - name: Install UV
-        uses: astral-sh/setup-uv@v3
-        with:
-          enable-cache: true
+#       # 2. Set up uv and Python
+#       - name: Install UV
+#         uses: astral-sh/setup-uv@v3
+#         with:
+#           enable-cache: true
 
-      - name: Set up python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12" # Note: 3.14.4 does not exist yet; use 3.12 or 3.13
+#       - name: Set up python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: "3.12" # Note: 3.14.4 does not exist yet; use 3.12 or 3.13
       
-      # 3. Install required libraries 
-      - name: Install Dependencies
-        run: uv sync
+#       # 3. Install required libraries 
+#       - name: Install Dependencies
+#         run: uv sync
 
-      # 4. Execute the actual build script
-      - name: Build Application
-        run: uv build
-        env:
-          EMAIL: ${{ secrets.EMAIL }}
-          GEMINI_API_KEY : ${{ secrets.GEMINI_API_KEY }}
+#       # 4. Execute the actual build script
+#       - name: Build Application
+#         run: uv build
+#         env:
+#           EMAIL: ${{ secrets.EMAIL }}
+#           GEMINI_API_KEY : ${{ secrets.GEMINI_API_KEY }}
 
-      # 5. Save the compiled files 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-package-distributions
-          path: dist/
+#       # 5. Save the compiled files 
+#       - name: Upload Build Artifact
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: python-package-distributions
+#           path: dist/
