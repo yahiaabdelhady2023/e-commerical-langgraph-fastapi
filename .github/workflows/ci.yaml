@@ -24,11 +24,10 @@ jobs:
       - name: Install Dependencies
         run: uv sync
 
+
       - name: Build Application
         run: uv build
-        env:
-          EMAIL: ${{ secrets.EMAIL }}
-          GEMINI_API_KEY : ${{ secrets.GEMINI_API_KEY }}
+
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
@@ -58,3 +57,6 @@ jobs:
 
       - name: Run Pytest
         run: uv run pytest
+        env:
+          EMAIL: ${{ secrets.EMAIL }}
+          GEMINI_API_KEY : ${{ secrets.GEMINI_API_KEY }}
