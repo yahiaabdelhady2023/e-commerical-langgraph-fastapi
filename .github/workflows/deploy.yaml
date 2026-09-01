@@ -1,8 +1,10 @@
 name: Deploy to EC2
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_run:
+    workflows: ["Run Tests"] # This must exactly match the 'name:' defined in build.yaml
+    types:
+      - completed
 
 jobs:
   deploy:

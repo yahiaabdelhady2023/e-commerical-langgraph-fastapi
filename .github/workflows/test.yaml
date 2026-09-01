@@ -2,10 +2,10 @@ name: Run Tests
 
 # Triggers the workflow on push or pull request to the main branch
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_run:
+    workflows: ["Build Project"] # This must exactly match the 'name:' defined in build.yaml
+    types:
+      - completed
 
 jobs:
   test:

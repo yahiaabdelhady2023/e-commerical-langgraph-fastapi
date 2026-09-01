@@ -34,6 +34,9 @@ jobs:
       # 4. Execute the actual build script
       - name: Build Application
         run: uv build
+        env:
+          EMAIL: ${{ secrets.EMAIL }}
+          GEMINI_API_KEY : ${{ secrets.GEMINI_API_KEY }}
 
       # 5. Save the compiled files 
       - name: Upload Build Artifact
