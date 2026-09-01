@@ -131,5 +131,5 @@ jobs:
             
             
             # Restart your application service (e.g., systemd service, supervisord, or pm2)
-            sudo systemctl restart my-python-app
+            # sudo systemctl restart my-python-app
           EOF
