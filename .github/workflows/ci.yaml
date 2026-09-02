@@ -99,18 +99,16 @@ jobs:
             #install uv
             curl -LsSf https://astral.sh/uv/install.sh | sh
   
-            cd /home/ubuntu/app/${{ secrets.EC2_USER }}/dist
+            cd /home/ubuntu/app/dist
             uv venv
-            source venv/bin/activate
+            source .venv/bin/activate
 
             # Sync dependencies on EC2 using uv
             uv sync 
 
             tar -xzf e_commerical_langgraph_fastapi-0.1.0.tar.gz
 
-            cd /home/${{ secrets.EC2_USER }}/app
             
-
             # moving service to systemctl
             sudo mv services/deploy.service /etc/systemd/system/
 
