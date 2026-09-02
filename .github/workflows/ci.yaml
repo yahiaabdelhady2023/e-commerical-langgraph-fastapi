@@ -108,7 +108,8 @@ jobs:
 
             tar -xzf e_commerical_langgraph_fastapi-0.1.0.tar.gz
 
-            
+            cd /home/ubuntu/app/dist/e_commerical_langgraph_fastapi-0.1.0/src/e_commerical_langgraph_fastapi
+
             # moving service to systemctl
             sudo mv services/deploy.service /etc/systemd/system/
 
