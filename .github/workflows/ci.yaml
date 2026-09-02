@@ -100,7 +100,7 @@ jobs:
             curl -LsSf https://astral.sh/uv/install.sh | sh
   
             cd /home/ubuntu/app/dist
-            uv venv
+            # uv venv
             source .venv/bin/activate
 
             # Sync dependencies on EC2 using uv

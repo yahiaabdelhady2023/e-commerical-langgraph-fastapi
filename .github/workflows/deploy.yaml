@@ -40,20 +40,14 @@ jobs:
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
 
-            cd /home/${{ secrets.EC2_USER }}/dist
-            uv venv
-            source venv/bin/activate
+            cd /home/${{ secrets.EC2_USER }}/app
 
             # Sync dependencies on EC2 using uv
-            uv sync 
-
-            tar -xzf e_commerical_langgraph_fastapi-0.1.0.tar.gz
-
-            cd /home/${{ secrets.EC2_USER }}/app
+            uv sync
             
 
             # moving service to systemctl
-            sudo mv services/deploy.service /etc/systemd/system/
+            sudo cp src/e_commerical_langgraph_fastapi/services/deploy_service.service /etc/systemd/system/
 
             # install nginx
             sudo apt install nginx -y
@@ -62,7 +56,7 @@ jobs:
             sudo rm /etc/nginx/sites-enabled/default
 
             # create symbolic link
-            ln -s  /nginx/nginx.conf /etc/nginx/sites-enabled/
+            sudo ln -sf /home/${{ secrets.EC2_USER }}/app/src/e_commerical_langgraph_fastapi/nginx/nginx.conf /etc/nginx/sites-enabled/e-commerical-langgraph-fastapi
 
             # restart systemctl
             sudo systemctl daemon-reload
@@ -71,10 +65,5 @@ jobs:
             sudo systemctl start nginx
 
             # run custom service
-            sudo systemctl start deploy.service
-
-            
-            
-            # Restart your application service (e.g., systemd service, supervisord, or pm2)
-            sudo systemctl restart my-python-app
+            sudo systemctl enable --now deploy_service.service
           EOF

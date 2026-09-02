@@ -1,14 +1,15 @@
 [Unit]
 Description=deployment service using uvicorn
-after=network.target
+After=network.target
 
-[service]
+[Service]
 User=ubuntu
-ExecStart= /home/ubuntu/app/dist/e_commerical_langgraph_fastapi-0.1.0/src/e_commerical_langgraph_fastapi/.venv/bin/uvicorn main:app
-Restart=Always
+WorkingDirectory=/home/ubuntu/app
+ExecStart=/home/ubuntu/app/.venv/bin/uvicorn e_commerical_langgraph_fastapi.app.main:app --host 0.0.0.0 --port 8000
+Restart=always
 
 [Install]
-wantedBy=multi-user.target
+WantedBy=multi-user.target
 
 
 
