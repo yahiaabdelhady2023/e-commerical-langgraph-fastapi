@@ -4,7 +4,7 @@ after=network.target
 
 [service]
 User=ubuntu
-ExecStart=/usr/bin/python3 /home/ubuntu/.local/bin/uv run /home/ubuntu/code_projects/e-commerical-langgraph-fastapi/.venv/bin/uvicorn main:app
+ExecStart= /home/ubuntu/app/dist/e_commerical_langgraph_fastapi-0.1.0/src/e_commerical_langgraph_fastapi/.venv/bin/uvicorn main:app
 Restart=Always
 
 [Install]

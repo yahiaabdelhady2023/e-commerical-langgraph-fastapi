@@ -132,7 +132,4 @@ jobs:
             sudo systemctl start deploy_service.service
 
             
-            
-            # Restart your application service (e.g., systemd service, supervisord, or pm2)
-            # sudo systemctl restart my-python-app
           EOF
