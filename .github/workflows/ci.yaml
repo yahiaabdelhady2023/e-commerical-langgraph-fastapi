@@ -98,8 +98,8 @@ jobs:
 
             #install uv
             curl -LsSf https://astral.sh/uv/install.sh | sh
-
-            cd /home/app/${{ secrets.EC2_USER }}/dist
+  
+            cd /home/ubuntu/app/${{ secrets.EC2_USER }}/dist
             uv venv
             source venv/bin/activate
 
@@ -121,7 +121,7 @@ jobs:
             sudo rm /etc/nginx/sites-enabled/default
 
             # create symbolic link
-            ln -s  /nginx/nginx.conf /etc/nginx/sites-enabled/
+            sudo ln -s  /nginx/nginx.conf /etc/nginx/sites-enabled/
 
             # restart systemctl
             sudo systemctl daemon-reload
