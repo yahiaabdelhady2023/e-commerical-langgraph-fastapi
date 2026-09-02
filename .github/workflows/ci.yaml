@@ -111,7 +111,7 @@ jobs:
             cd /home/ubuntu/app/dist/e_commerical_langgraph_fastapi-0.1.0/src/e_commerical_langgraph_fastapi
 
             # moving service to systemctl
-            sudo mv services/deploy.service /etc/systemd/system/
+            sudo mv /services/deploy_service.service /etc/systemd/system/
 
             # install nginx
             sudo apt update && sudo apt install nginx -y
@@ -129,7 +129,7 @@ jobs:
             sudo systemctl start nginx
 
             # run custom service
-            sudo systemctl start deploy.service
+            sudo systemctl start deploy_service.service
 
             
             
