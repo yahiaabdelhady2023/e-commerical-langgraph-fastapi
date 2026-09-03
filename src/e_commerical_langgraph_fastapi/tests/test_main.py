@@ -2,7 +2,7 @@ import pytest
 from fastapi.testclient import TestClient
 from app.main import app
 
-#testing..
+#testing...
 client = TestClient(app)
 
 def test_root():
