@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 from typing_extensions import Annotated, TypedDict
 import io
 from PIL import Image
-from app.graphs.custom_functions.utility_functions import pythonic_text_clean
+from ..custom_functions.utility_functions import pythonic_text_clean
 
 CHUNK_SIZE = 5000
 CHUNK_OVERLAP_SIZE = 100
@@ -46,14 +46,14 @@ class SummaryWorkerState(TypedDict):
 class SummaryProcessingSchema(BaseModel):
     """Changes throughout summary worker nodes."""
 
-    current_mini_summary: Document = Field(
-        description="Write a short summary of the current document and return only a Document."
+    current_mini_summary: str = Field(
+        description="Write a short summary of the current document and return only a type 'Document'"
     )
 
 class SummaryOutputSchema(BaseModel):
     """Combines the worker summaries into one final summary."""
 
-    final_summary: Document = Field(
+    final_summary: str = Field(
         description="Write a cohesive final summary using all mini-summaries."
     )
 
@@ -135,7 +135,7 @@ def aggregrate_summaries(state: SummaryState):
     summary_llm = general_llm.with_structured_output(SummaryOutputSchema)
     msg = [
         {"role": "system", "content": "Combine these summaries into one cohesive summary."},
-        {"role": "user", "content": [summary.page_content for summary in state["mini_summaries"]]},
+        {"role": "user", "content": [summary for summary in state["mini_summaries"]]},
     ]
     result = summary_llm.invoke(msg)
     return {"final_summary": result.final_summary}
@@ -225,13 +225,15 @@ def build_summary_subgraph_agent():
 #              8. Saving Graph Images
 ####################################################################
 
-graph_bytes = io.BytesIO(compiled_summary_parentgraph.get_graph().draw_mermaid_png())
 
-with Image.open(graph_bytes) as img:
-    img.save("parent_summary_graph.png")
+def save_summary_agent_png():
+    graph_bytes = io.BytesIO(compiled_summary_parentgraph.get_graph().draw_mermaid_png())
+
+    with Image.open(graph_bytes) as img:
+        img.save("parent_summary_graph.png")
 
 
-graph_bytes = io.BytesIO(compiled_summary_subgraph.get_graph().draw_mermaid_png())
+    graph_bytes = io.BytesIO(compiled_summary_subgraph.get_graph().draw_mermaid_png())
 
-with Image.open(graph_bytes) as img:
-    img.save("worker_summary_graph.png")
+    with Image.open(graph_bytes) as img:
+        img.save("worker_summary_graph.png")

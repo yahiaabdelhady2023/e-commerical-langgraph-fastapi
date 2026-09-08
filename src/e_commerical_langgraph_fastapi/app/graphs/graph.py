@@ -4,7 +4,14 @@ from typing import Optional, Annotated
 import operator
 from langchain.chat_models import init_chat_model
 from dotenv import load_dotenv
-from general_agents.resources_agent import build_resources_agent, build_summary_agent
+import sys
+
+for x in sys.path:
+    print(x)
+
+from e_commerical_langgraph_fastapi.app.graphs.general_agents.resources_agent import build_resources_agent
+from e_commerical_langgraph_fastapi.app.graphs.general_agents.summary_agent import build_summary_agent
+
 from PIL import Image
 import io
 
@@ -27,15 +34,16 @@ load_dotenv()
 # result = resource_agent.invoke(inputs)
 
 
-with open("documents/llm_test_document.txt","r") as f:
-    text = f.read()
+# with open("documents/llm_test_document.txt","r") as f:
+#     text = f.read()
 
-string_docs=[text]
-summary_agent = build_summary_agent()
-inputs = {"string_documents":string_docs,"clean_required":"yes"}
-result = summary_agent.invoke(inputs)
+# string_docs=[text]
+# summary_agent = build_summary_agent()
+# summary_agent = summary_agent.compile()
+# inputs = {"string_documents":string_docs,"clean_required":"yes"}
+# result = summary_agent.invoke(inputs)
 
-
+# print(result["final_summary"])
 
 # with Image.open(io.BytesIO(resource_agent.get_graph().draw_mermaid_png())) as img:
 #     img.show()
