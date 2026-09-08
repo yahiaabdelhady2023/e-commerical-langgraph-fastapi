@@ -11,9 +11,10 @@ from dotenv import load_dotenv
 import csv
 
 import sys
-print(sys.path)
+for x in sys.path:
+    print(x)
 
-from app.graphs.custom_functions.utility_functions import handle_web_requests, get_encoding, locate_file, pythonic_text_clean
+from e_commerical_langgraph_fastapi.app.graphs.custom_functions.utility_functions import handle_web_requests, get_encoding, locate_file, pythonic_text_clean
 from langgraph.types import Send
 from langgraph.graph import StateGraph, START, END
 import io
@@ -238,11 +239,11 @@ compiled_resource_parentgraph = resource_parentgraph.compile()
 ####################################################################
 #              7. Saving Graph Images
 ####################################################################
+def save_resource_agent_graph_png():
+    graph_bytes = io.BytesIO(compiled_resource_parentgraph.get_graph().draw_mermaid_png())
 
-graph_bytes = io.BytesIO(compiled_resource_parentgraph.get_graph().draw_mermaid_png())
-
-with Image.open(graph_bytes) as img:
-    img.save("parent_graph.png")
+    with Image.open(graph_bytes) as img:
+        img.save("parent_graph.png")
 
 ####################################################################
 #              8. Import Build
