@@ -11,7 +11,7 @@ for x in sys.path:
 
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.resources_agent import build_resources_agent
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.summary_agent import build_summary_agent
-
+from e_commerical_langgraph_fastapi.app.graphs.general_agents.translation_agent import build_translation_agent
 from PIL import Image
 import io
 
@@ -47,3 +47,19 @@ load_dotenv()
 
 # with Image.open(io.BytesIO(resource_agent.get_graph().draw_mermaid_png())) as img:
 #     img.show()
+
+
+with open("documents/french_translation.txt","r",encoding='utf-8') as f:
+    text = f.read()
+
+string_docs=[text]
+
+translation_graph = build_translation_agent()
+translation_graph = translation_graph.compile()
+
+inputs = {"string_documents":string_docs,"target_language":"english"}
+result = translation_graph.invoke(
+inputs
+)
+
+print(result["final_translated_document"])
