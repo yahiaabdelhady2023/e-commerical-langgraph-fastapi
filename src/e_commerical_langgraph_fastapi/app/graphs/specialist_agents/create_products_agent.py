@@ -131,6 +131,7 @@ compiled_product_parentgraph = product_parentgraph.compile()
 def build_product_agent():
     """Build the uncompiled product parent graph."""
     resource_parentgraph = build_resources_agent()
+    compiled_resource_parentgraph = resource_parentgraph.compile()
     product_parentgraph = StateGraph(ProductState)
     product_parentgraph.add_node("resources_agent", compiled_resource_parentgraph)
     product_parentgraph.add_node("product_subgraph", compiled_product_subgraph)

@@ -32,8 +32,9 @@ error happened due to probably change of import, have to make sure uv test, in p
 28. copy create product agents code from old repo ✅
 30. test create products agent ✅ -->
 
-31. fix documents not found for products agent testing, the two ones in documents folder
+31. fix documents not found for products agent testing, the two ones in documents folder ✅
 32. create unittest to test products agent
-33. test
-34. merge and pull request
+33. unit test: Evaluate Whole Agent
+34. Unit test: Check if Python Validation Model is working for small json file
+35. merge and pull request
 35. check liveserver

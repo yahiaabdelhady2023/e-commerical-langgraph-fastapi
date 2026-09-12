@@ -67,20 +67,20 @@ load_dotenv()
 # print(result["final_translated_document"])
 
 
-inputs = {
-    "messages": [
-        {
-            "role": "user", 
-            "content": "extract data from  https://api.escuelajs.co/api/v1/products and from https://api.escuelajs.co/api/v1/products return both products a single list, also extract data from this local file product_intelligence_report_v2.txt and"
-            "documents/mock_products_100.json" 
-        }
-    ]
-}
+# inputs = {
+#     "messages": [
+#         {
+#             "role": "user", 
+#             "content": "extract data from single_product.json and product_intelligence_report_v2.txt" 
+#         }
+#     ]
+# }
 
-product_graph = build_product_agent()
-product_graph = product_graph.compile()
+# product_graph = build_product_agent()
+# product_graph = product_graph.compile()
 
-result = product_graph.invoke(
-inputs
-)
-print(result)
+# result = product_graph.invoke(
+# inputs
+# )
+# print("result is",result)
+# print(result["processed_resource_list"])

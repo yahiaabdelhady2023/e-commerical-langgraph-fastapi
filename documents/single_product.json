@@ -1,0 +1,14 @@
+[
+      {
+    "id": "prod_005",
+    "name": "SonicWave Mini Bluetooth Speaker",
+    "price": 19.99,
+    "rating": 4.1,
+    "category": "Audio",
+    "description": "Pocket-sized speaker with surprisingly deep bass. IPX7 waterproof rating.",
+    "attributes": {
+      "bluetooth_version": "5.3",
+      "playtime": "10 hours"
+    }
+  }
+]
