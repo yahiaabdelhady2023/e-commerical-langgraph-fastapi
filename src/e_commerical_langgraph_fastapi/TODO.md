@@ -24,7 +24,16 @@ general and Specialist agents categories ✅
 23. Fix the bug discovered in translation agent, it doesn't return str, it returns  `isinstance([{'type': 'text', 'text': 'Each morning, the city sl..` ✅
 23. make sure Translation Agent returns str as final output  ✅ -->
 
-24. fix path issue for test.py, it happened after merge ImportError while importing test module '/home/runner/work/e-commerical-langgraph-fastapi/e-commerical-langgraph-fastapi/src/e_commerical_langgraph_fastapi/tests/graphs/general_agents/test_summary_agent.py'.
-error happened due to probably change of import, have to make sure uv test, in pythonpath for uv pytomal starts same as python3 -m
-25. slight modify main.py to return different string instead of hello world to hello duck, to make sure when we build and deploy it works on live
-26. merge and create pull request for create_translation_agent branch
+<!-- 24. fix path issue for test.py, it happened after merge ImportError while importing test module '/home/runner/work/e-commerical-langgraph-fastapi/e-commerical-langgraph-fastapi/src/e_commerical_langgraph_fastapi/tests/graphs/general_agents/test_summary_agent.py'. 
+error happened due to probably change of import, have to make sure uv test, in pythonpath for uv pytomal starts same as python3 -m ✅
+25. slight modify main.py to return different string instead of hello world to hello duck, to make sure when we build and deploy it works on live ✅
+26. merge and create pull request for create_translation_agent branch ✅ -->
+<!-- 27. create new branch create_products_agent ✅ 
+28. copy create product agents code from old repo ✅
+30. test create products agent ✅ -->
+
+31. fix documents not found for products agent testing, the two ones in documents folder
+32. create unittest to test products agent
+33. test
+34. merge and pull request
+35. check liveserver

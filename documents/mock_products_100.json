@@ -1,0 +1,62 @@
+[
+  {
+    "id": "prod_001",
+    "name": "QuantumGlow LED Desk Lamp",
+    "price": 45.99,
+    "rating": 4.2,
+    "category": "Home & Office Electronics",
+    "description": "Features three light modes and a flexible neck. Perfect for late-night coding or reading.",
+    "attributes": {
+      "color": "Matte Black",
+      "material": "ABS Plastic"
+    }
+  },
+  {
+    "id": "prod_002",
+    "name": "TrailBlazer Ergonomic Backpack",
+    "price": 89.00,
+    "rating": 4.8,
+    "category": "Outdoor & Apparel",
+    "description": "Water-resistant nylon with a dedicated 15-inch laptop sleeve and hidden anti-theft pocket.",
+    "attributes": {
+      "capacity": "25L",
+      "waterproof": true
+    }
+  },
+  {
+    "id": "prod_003",
+    "name": "SipSavvy Smart Thermos",
+    "price": 34.50,
+    "rating": 3.9,
+    "category": "Kitchenware",
+    "description": "Vacuum insulated stainless steel flask that displays current temperature on an OLED screen cap.",
+    "attributes": {
+      "volume": "500ml",
+      "battery_life": "6 months"
+    }
+  },
+  {
+    "id": "prod_004",
+    "name": "AeroStride Running Shoes",
+    "price": 120.00,
+    "rating": 4.5,
+    "category": "Footwear",
+    "description": "Lightweight mesh upper with responsive foam midsole cushioning designed for marathon runners.",
+    "attributes": {
+      "size_range": [7, 13],
+      "terrain": "Road"
+    }
+  },
+  {
+    "id": "prod_005",
+    "name": "SonicWave Mini Bluetooth Speaker",
+    "price": 19.99,
+    "rating": 4.1,
+    "category": "Audio",
+    "description": "Pocket-sized speaker with surprisingly deep bass. IPX7 waterproof rating.",
+    "attributes": {
+      "bluetooth_version": "5.3",
+      "playtime": "10 hours"
+    }
+  }
+]

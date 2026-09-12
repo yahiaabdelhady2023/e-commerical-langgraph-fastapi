@@ -21,3 +21,10 @@ use .. [relative import]
 4. learnt that I shouldn't ask AI agent to return Document data type as output, as it will struggle, only str, then i manually in python convert it into Document, stick to primitive data types when using with_structured_output for LLM like 'int', 'float', 'str', 'list', 'dict'
 5. Repository Maintenance & Branch Setup: Removed the legacy tut directory, merged the active branch into main, and created a dedicated feature branch for the translation agent.
 6. Translation Agent Migration & Output Fixes: Migrated agent code from the old repository, wrote manual and automated test cases, and fixed an output format bug so the LLM cleanly returns a str instead of a list of content dictionaries or Document data types.
+
+# 9/9/2026
+1. fixed tiktoken bug missing when testing on github using CI, installed it using uv ✅
+2. changed hello world in endpoint to hello carrot to check that liveserver CI/CD is working, and it is working ✅
+3. create new branch create_products_agent ✅ 
+4. copied create product agents code from old repo ✅
+5. test create products agent, and it is working ✅

@@ -12,6 +12,8 @@ for x in sys.path:
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.resources_agent import build_resources_agent
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.summary_agent import build_summary_agent
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.translation_agent import build_translation_agent
+from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.create_products_agent import build_product_agent
+
 from PIL import Image
 import io
 
@@ -49,17 +51,36 @@ load_dotenv()
 #     img.show()
 
 
-with open("documents/french_translation.txt","r",encoding='utf-8') as f:
-    text = f.read()
+# with open("documents/french_translation.txt","r",encoding='utf-8') as f:
+#     text = f.read()
 
-string_docs=[text]
+# string_docs=[text]
 
-translation_graph = build_translation_agent()
-translation_graph = translation_graph.compile()
+# translation_graph = build_translation_agent()
+# translation_graph = translation_graph.compile()
 
-inputs = {"string_documents":string_docs,"target_language":"english"}
-result = translation_graph.invoke(
+# inputs = {"string_documents":string_docs,"target_language":"english"}
+# result = translation_graph.invoke(
+# inputs
+# )
+
+# print(result["final_translated_document"])
+
+
+inputs = {
+    "messages": [
+        {
+            "role": "user", 
+            "content": "extract data from  https://api.escuelajs.co/api/v1/products and from https://api.escuelajs.co/api/v1/products return both products a single list, also extract data from this local file product_intelligence_report_v2.txt and"
+            "documents/mock_products_100.json" 
+        }
+    ]
+}
+
+product_graph = build_product_agent()
+product_graph = product_graph.compile()
+
+result = product_graph.invoke(
 inputs
 )
-
-print(result["final_translated_document"])
+print(result)
