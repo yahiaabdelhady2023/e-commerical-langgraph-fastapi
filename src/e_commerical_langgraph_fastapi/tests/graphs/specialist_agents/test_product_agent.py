@@ -1,5 +1,5 @@
 import pytest
-from app.graphs.specialist_agents.create_products_agent import build_product_agent, Product
+from app.graphs.specialist_agents.products_agent import build_product_agent, Product
 from langgraph.checkpoint.memory import MemorySaver
 from pydantic import BaseModel, Field
 

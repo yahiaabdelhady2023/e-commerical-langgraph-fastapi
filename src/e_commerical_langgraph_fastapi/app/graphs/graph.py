@@ -12,7 +12,7 @@ for x in sys.path:
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.resources_agent import build_resources_agent
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.summary_agent import build_summary_agent
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.translation_agent import build_translation_agent
-from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.create_products_agent import build_product_agent
+from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_agent import build_product_agent
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.culture_agent import build_culture_agent
 
 from PIL import Image
@@ -104,6 +104,6 @@ load_dotenv()
 # print(result)
 def main():
     print("Hello from the graph!")
-    
+
 if __name__ == "__main__":
     print("hello from graph.py")
