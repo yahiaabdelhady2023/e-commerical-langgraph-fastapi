@@ -1,0 +1,738 @@
+[
+    {
+        "name": "Classic Red Baseball Capp",
+        "price": 35.0,
+        "description": "Elevate your casual wardrobe with this timeless red baseball cap. Crafted from durable fabric, it features a comfortable fit with an adjustable strap at the back, ensuring one size fits all. Perfect for sunny days or adding a sporty touch to your outfit.",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Classic Black Baseball Cap",
+        "price": 58.0,
+        "description": "Elevate your casual wear with this timeless black baseball cap. Made with high-quality, breathable fabric, it features an adjustable strap for the perfect fit. Whether you\u2019re out for a jog or just running errands, this cap adds a touch of style to any outfit.",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Classic Olive Chino Shorts",
+        "price": 84.0,
+        "description": "Elevate your casual wardrobe with these classic olive chino shorts. Designed for comfort and versatility, they feature a smooth waistband, practical pockets, and a tailored fit that makes them perfect for both relaxed weekends and smart-casual occasions. The durable fabric ensures they hold up throughout your daily activities while maintaining a stylish look.",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Classic High-Waisted Athletic Shorts",
+        "price": 43.0,
+        "description": "Stay comfortable and stylish with our Classic High-Waisted Athletic Shorts. Designed for optimal movement and versatility, these shorts are a must-have for your workout wardrobe. Featuring a figure-flattering high waist, breathable fabric, and a secure fit that ensures they stay in place during any activity, these shorts are perfect for the gym, running, or even just casual wear.",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Classic White Tee - Timeless Style and Comfort",
+        "price": 73.0,
+        "description": "Elevate your everyday wardrobe with our Classic White Tee. Crafted from premium soft cotton material, this versatile t-shirt combines comfort with durability, perfect for daily wear. Featuring a relaxed, unisex fit that flatters every body type, it's a staple piece for any casual ensemble. Easy to care for and machine washable, this white tee retains its shape and softness wash after wash. Pair it with your favorite jeans or layer it under a jacket for a smart look.",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Classic Black T-Shirt",
+        "price": 35.0,
+        "description": "Elevate your everyday style with our Classic Black T-Shirt. This staple piece is crafted from soft, breathable cotton for all-day comfort. Its versatile design features a classic crew neck and short sleeves, making it perfect for layering or wearing on its own. Durable and easy to care for, it's sure to become a favorite in your wardrobe.",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek White & Orange Wireless Gaming Controller",
+        "price": 69.0,
+        "description": "Elevate your gaming experience with this state-of-the-art wireless controller, featuring a crisp white base with vibrant orange accents. Designed for precision play, the ergonomic shape and responsive buttons provide maximum comfort and control for endless hours of gameplay. Compatible with multiple gaming platforms, this controller is a must-have for any serious gamer looking to enhance their setup.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Wireless Headphone & Inked Earbud Set",
+        "price": 44.0,
+        "description": "Experience the fusion of style and sound with this sophisticated audio set featuring a pair of sleek, white wireless headphones offering crystal-clear sound quality and over-ear comfort. The set also includes a set of durable earbuds, perfect for an on-the-go lifestyle. Elevate your music enjoyment with this versatile duo, designed to cater to all your listening needs.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Efficient 2-Slice Toaster",
+        "price": 48.0,
+        "description": "Enhance your morning routine with our sleek 2-slice toaster, featuring adjustable browning controls and a removable crumb tray for easy cleaning. This compact and stylish appliance is perfect for any kitchen, ensuring your toast is always golden brown and delicious.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Wireless Computer Mouse",
+        "price": 12.0,
+        "description": "Experience smooth and precise navigation with this modern wireless mouse, featuring a glossy finish and a comfortable ergonomic design. Its responsive tracking and easy-to-use interface make it the perfect accessory for any desktop or laptop setup. The stylish blue hue adds a splash of color to your workspace, while its compact size ensures it fits neatly in your bag for on-the-go productivity.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Modern Laptop with Ambient Lightin",
+        "price": 88.0,
+        "description": "Experience next-level computing with our ultra-slim laptop, featuring a stunning display illuminated by ambient lighting. This high-performance machine is perfect for both work and play, delivering po",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Modern Laptop for Professionals",
+        "price": 97.0,
+        "description": "Experience cutting-edge technology and elegant design with our latest laptop model. Perfect for professionals on-the-go, this high-performance laptop boasts a powerful processor, ample storage, and a long-lasting battery life, all encased in a lightweight, slim frame for ultimate portability. Shop now to elevate your work and play.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Stylish Red & Silver Over-Ear Headphones",
+        "price": 39.0,
+        "description": "Immerse yourself in superior sound quality with these sleek red and silver over-ear headphones. Designed for comfort and style, the headphones feature cushioned ear cups, an adjustable padded headband, and a detachable red cable for easy storage and portability. Perfect for music lovers and audiophiles who value both appearance and audio fidelity.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Mirror Finish Phone Case",
+        "price": 27.0,
+        "description": "Enhance your smartphone's look with this ultra-sleek mirror finish phone case. Designed to offer style with protection, the case features a reflective surface that adds a touch of elegance while keeping your device safe from scratches and impacts. Perfect for those who love a minimalist and modern aesthetic.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Smartwatch with Vibrant Display",
+        "price": 16.0,
+        "description": "Experience modern timekeeping with our high-tech smartwatch, featuring a vivid touch screen display, customizable watch faces, and a comfortable blue silicone strap. This smartwatch keeps you connected with notifications and fitness tracking while showcasing exceptional style and versatility.",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Modern Leather Sofa",
+        "price": 53.0,
+        "description": "Enhance the elegance of your living space with our Sleek Modern Leather Sofa. Designed with a minimalist aesthetic, it features clean lines and a luxurious leather finish. The robust metal legs provide stability and support, while the plush cushions ensure comfort. Perfect for contemporary homes or office waiting areas, this sofa is a statement piece that combines style with practicality.",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Mid-Century Modern Wooden Dining Table",
+        "price": 24.0,
+        "description": "Elevate your dining room with this sleek Mid-Century Modern dining table, featuring an elegant walnut finish and tapered legs for a timeless aesthetic. Its sturdy wood construction and minimalist design make it a versatile piece that fits with a variety of decor styles. Perfect for intimate dinners or as a stylish spot for your morning coffee.",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Elegant Golden-Base Stone Top Dining Table",
+        "price": 66.0,
+        "description": "Elevate your dining space with this luxurious table, featuring a sturdy golden metal base with an intricate rod design that provides both stability and chic elegance. The smooth stone top in a sleek round shape offers a robust surface for your dining pleasure. Perfect for both everyday meals and special occasions, this table easily complements any modern or glam decor.",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Elegant Solid Wood Dining Table",
+        "price": 67.0,
+        "description": "Enhance your dining space with this sleek, contemporary dining table, crafted from high-quality solid wood with a warm finish. Its sturdy construction and minimalist design make it a perfect addition for any home looking for a touch of elegance. Accommodates up to six guests comfortably and includes a striking fruit bowl centerpiece. The overhead lighting is not included.",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Modern Minimalist Workstation Setup",
+        "price": 49.0,
+        "description": "Elevate your home office with our Modern Minimalist Workstation Setup, featuring a sleek wooden desk topped with an elegant computer, stylish adjustable wooden desk lamp, and complimentary accessories for a clean, productive workspace. This setup is perfect for professionals seeking a contemporary look that combines functionality with design.",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Modern Ergonomic Office Chair",
+        "price": 71.0,
+        "description": "Elevate your office space with this sleek and comfortable Modern Ergonomic Office Chair. Designed to provide optimal support throughout the workday, it features an adjustable height mechanism, smooth-rolling casters for easy mobility, and a cushioned seat for extended comfort. The clean lines and minimalist white design make it a versatile addition to any contemporary workspace.",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Futuristic Holographic Soccer Cleats",
+        "price": 39.0,
+        "description": "Step onto the field and stand out from the crowd with these eye-catching holographic soccer cleats. Designed for the modern player, these cleats feature a sleek silhouette, lightweight construction for maximum agility, and durable studs for optimal traction. The shimmering holographic finish reflects a rainbow of colors as you move, ensuring that you'll be noticed for both your skills and style. Perfect for the fashion-forward athlete who wants to make a statement.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Rainbow Glitter High Heels",
+        "price": 39.0,
+        "description": "Step into the spotlight with these eye-catching rainbow glitter high heels. Designed to dazzle, each shoe boasts a kaleidoscope of shimmering colors that catch and reflect light with every step. Perfect for special occasions or a night out, these stunners are sure to turn heads and elevate any ensemble.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Chic Summer Denim Espadrille Sandals",
+        "price": 33.0,
+        "description": "Step into summer with style in our denim espadrille sandals. Featuring a braided jute sole for a classic touch and adjustable denim straps for a snug fit, these sandals offer both comfort and a fashionable edge. The easy slip-on design ensures convenience for beach days or casual outings.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Vibrant Runners: Bold Orange & Blue Sneakers",
+        "price": 27.0,
+        "description": "Step into style with these eye-catching sneakers featuring a striking combination of orange and blue hues. Designed for both comfort and fashion, these shoes come with flexible soles and cushioned insoles, perfect for active individuals who don't compromise on style. The reflective silver accents add a touch of modernity, making them a standout accessory for your workout or casual wear.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Vibrant Pink Classic Sneakers",
+        "price": 84.0,
+        "description": "Step into style with our Vibrant Pink Classic Sneakers! These eye-catching shoes feature a bold pink hue with iconic white detailing, offering a sleek, timeless design. Constructed with durable materials and a comfortable fit, they are perfect for those seeking a pop of color in their everyday footwear. Grab a pair today and add some vibrancy to your step!",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Futuristic Silver and Gold High-Top Sneaker",
+        "price": 68.0,
+        "description": "Step into the future with this eye-catching high-top sneaker, designed for those who dare to stand out. The sneaker features a sleek silver body with striking gold accents, offering a modern twist on classic footwear. Its high-top design provides support and style, making it the perfect addition to any avant-garde fashion collection. Grab a pair today and elevate your shoe game!",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Futuristic Chic High-Heel Boots",
+        "price": 36.0,
+        "description": "Elevate your style with our cutting-edge high-heel boots that blend bold design with avant-garde aesthetics. These boots feature a unique color-block heel, a sleek silhouette, and a versatile light grey finish that pairs easily with any cutting-edge outfit. Crafted for the fashion-forward individual, these boots are sure to make a statement.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Elegant Patent Leather Peep-Toe Pumps with Gold-Tone Heel",
+        "price": 53.0,
+        "description": "Step into sophistication with these chic peep-toe pumps, showcasing a lustrous patent leather finish and an eye-catching gold-tone block heel. The ornate buckle detail adds a touch of glamour, perfect for elevating your evening attire or complementing a polished daytime look.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Elegant Purple Leather Loafers",
+        "price": 17.0,
+        "description": "Step into sophistication with our Elegant Purple Leather Loafers, perfect for making a bold statement. Crafted from high-quality leather with a vibrant purple finish, these shoes feature a classic loafer silhouette that's been updated with a contemporary twist. The comfortable slip-on design and durable soles ensure both style and functionality for the modern man.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Classic Blue Suede Casual Shoes",
+        "price": 39.0,
+        "description": "Step into comfort with our Classic Blue Suede Casual Shoes, perfect for everyday wear. These shoes feature a stylish blue suede upper, durable rubber soles for superior traction, and classic lace-up fronts for a snug fit. The sleek design pairs well with both jeans and chinos, making them a versatile addition to any wardrobe.",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Futuristic Electric Bicycle",
+        "price": 22.0,
+        "description": "This modern electric bicycle combines style and efficiency with its unique design and top-notch performance features. Equipped with a durable frame, enhanced battery life, and integrated tech capabilities, it's perfect for the eco-conscious commuter looking to navigate the city with ease.",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek All-Terrain Go-Kart",
+        "price": 37.0,
+        "description": "Experience the thrill of outdoor adventures with our Sleek All-Terrain Go-Kart, featuring a durable frame, comfortable racing seat, and robust, large-tread tires perfect for handling a variety of terrains. Designed for fun-seekers of all ages, this go-kart is an ideal choice for backyard racing or exploring local trails.",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Radiant Citrus Eau de Parfum",
+        "price": 73.0,
+        "description": "Indulge in the essence of summer with this vibrant citrus-scented Eau de Parfum. Encased in a sleek glass bottle with a bold orange cap, this fragrance embodies freshness and elegance. Perfect for daily wear, it's an olfactory delight that leaves a lasting, zesty impression.",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Sleek Olive Green Hardshell Carry-On Luggage",
+        "price": 48.0,
+        "description": "Travel in style with our durable hardshell carry-on, perfect for weekend getaways and business trips. This sleek olive green suitcase features smooth gliding wheels for easy airport navigation, a sturdy telescopic handle, and a secure zippered compartment to keep your belongings safe. Its compact size meets most airline overhead bin requirements, ensuring a hassle-free flying experience.",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Chic Transparent Fashion Handbag",
+        "price": 61.0,
+        "description": "Elevate your style with our Chic Transparent Fashion Handbag, perfect for showcasing your essentials with a clear, modern edge. This trendy accessory features durable acrylic construction, luxe gold-tone hardware, and an elegant chain strap. Its compact size ensures you can carry your day-to-day items with ease and sophistication.",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Trendy Pink-Tinted Sunglasses",
+        "price": 38.0,
+        "description": "Step up your style game with these fashionable black-framed, pink-tinted sunglasses. Perfect for making a statement while protecting your eyes from the glare. Their bold color and contemporary design make these shades a must-have accessory for any trendsetter looking to add a pop of color to their ensemble.",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Elegant Glass Tumbler Set",
+        "price": 50.0,
+        "description": "Enhance your drinkware collection with our sophisticated set of glass tumblers, perfect for serving your favorite beverages. This versatile set includes both clear and subtly tinted glasses, lending a modern touch to any table setting. Crafted with quality materials, these durable tumblers are designed to withstand daily use while maintaining their elegant appeal.",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-11518499-1196-43ac-996a-8d7c33719b96",
+        "price": 129.0,
+        "description": "desc-63e6c2d8-23d5-4bee-9476-564264c18d6b",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-1f397c86-8188-4498-9b10-60c3ea89d3ea",
+        "price": 232.0,
+        "description": "desc-f3c83b2a-c547-496b-936e-0d94e9e3844f",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-265b2124-e30a-4911-bb9e-3dc53520f182",
+        "price": 827.0,
+        "description": "desc-1cb10e3d-0c0a-4649-a304-9ca602d969b3",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-8a27a3ef-9d14-4bb9-b36e-576a73fe08b0",
+        "price": 78.0,
+        "description": "desc-9eb2cc0a-abee-4eaa-bf31-abc0cde389f1",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wagebook-settings-9f3a",
+        "price": 12.0,
+        "description": "eyJyb3dzIjpbeyJhIjoyfV19",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wb-mttfeff1duc9-st",
+        "price": 1.0,
+        "description": "{\"rows\":[{\"id\":\"default\",\"hourly\":{\"netMonthly\":12000,\"payMonths\":13,\"workDaysPerWeek\":5,\"onsiteHours\":9.5,\"commuteMinutes\":45,\"overtimeHoursPerWeek\":5,\"annualLeaveDays\":10,\"monthlyCost\":900},\"fund\":{\"target\":200000,\"cushionMonths\":6,\"startBalance\":38000,\"monthlySavePlan\":4000},\"categories\":{\"expense\":[{\"key\":\"food\",\"name\":\"\u5403\u996d\",\"flex\":\"flex\",\"icon\":\"bowl\"},{\"key\":\"commute\",\"name\":\"\u901a\u52e4\",\"flex\":\"fixed\",\"icon\":\"bus\"},{\"key\":\"rent\",\"name\":\"\u623f\u79df\",\"flex\":\"fixed\",\"icon\":\"home\"},{\"key\":\"coffee\",\"name\":\"\u5496\u5561\u5976\u8336\",\"flex\":\"flex\",\"icon\":\"cup\"},{\"key\":\"shop\",\"name\":\"\u8d2d\u7269\",\"flex\":\"flex\",\"icon\":\"bag\"},{\"key\":\"fun\",\"name\":\"\u5a31\u4e50\",\"flex\":\"flex\",\"icon\":\"star\"},{\"key\":\"health\",\"name\":\"\u5065\u5eb7\",\"flex\":\"fixed\",\"icon\":\"heart\"},{\"key\":\"other\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}],\"income\":[{\"key\":\"salary\",\"name\":\"\u5de5\u8d44\",\"flex\":\"fixed\",\"icon\":\"wallet\"},{\"key\":\"bonus\",\"name\":\"\u5956\u91d1\",\"flex\":\"flex\",\"icon\":\"gift\"},{\"key\":\"side\",\"name\":\"\u526f\u4e1a\",\"flex\":\"flex\",\"icon\":\"spark\"},{\"key\":\"other_in\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}]},\"updatedAt\":\"2026-09-09T01:34:44.253Z\"}],\"updatedAt\":\"2026-09-09T01:34:46.642Z\"}",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wb-mttfeff1duc9-tx",
+        "price": 1.0,
+        "description": "{\"rows\":[],\"updatedAt\":\"2026-09-09T01:34:46.641Z\"}",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wb-mttfeg9ou7mk-st",
+        "price": 1.0,
+        "description": "{\"rows\":[{\"id\":\"default\",\"hourly\":{\"netMonthly\":12000,\"payMonths\":13,\"workDaysPerWeek\":5,\"onsiteHours\":9.5,\"commuteMinutes\":45,\"overtimeHoursPerWeek\":5,\"annualLeaveDays\":10,\"monthlyCost\":900},\"fund\":{\"target\":200000,\"cushionMonths\":6,\"startBalance\":38000,\"monthlySavePlan\":4000},\"categories\":{\"expense\":[{\"key\":\"food\",\"name\":\"\u5403\u996d\",\"flex\":\"flex\",\"icon\":\"bowl\"},{\"key\":\"commute\",\"name\":\"\u901a\u52e4\",\"flex\":\"fixed\",\"icon\":\"bus\"},{\"key\":\"rent\",\"name\":\"\u623f\u79df\",\"flex\":\"fixed\",\"icon\":\"home\"},{\"key\":\"coffee\",\"name\":\"\u5496\u5561\u5976\u8336\",\"flex\":\"flex\",\"icon\":\"cup\"},{\"key\":\"shop\",\"name\":\"\u8d2d\u7269\",\"flex\":\"flex\",\"icon\":\"bag\"},{\"key\":\"fun\",\"name\":\"\u5a31\u4e50\",\"flex\":\"flex\",\"icon\":\"star\"},{\"key\":\"health\",\"name\":\"\u5065\u5eb7\",\"flex\":\"fixed\",\"icon\":\"heart\"},{\"key\":\"other\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}],\"income\":[{\"key\":\"salary\",\"name\":\"\u5de5\u8d44\",\"flex\":\"fixed\",\"icon\":\"wallet\"},{\"key\":\"bonus\",\"name\":\"\u5956\u91d1\",\"flex\":\"flex\",\"icon\":\"gift\"},{\"key\":\"side\",\"name\":\"\u526f\u4e1a\",\"flex\":\"flex\",\"icon\":\"spark\"},{\"key\":\"other_in\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}]},\"updatedAt\":\"2026-09-09T01:34:45.117Z\"}],\"updatedAt\":\"2026-09-09T01:34:46.943Z\"}",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wb-mttfeg9ou7mk-tx",
+        "price": 1.0,
+        "description": "{\"rows\":[],\"updatedAt\":\"2026-09-09T01:34:46.941Z\"}",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wb-mttfie02q3in-st",
+        "price": 1.0,
+        "description": "{\"rows\":[{\"id\":\"default\",\"hourly\":{\"netMonthly\":12000,\"payMonths\":13,\"workDaysPerWeek\":5,\"onsiteHours\":9.5,\"commuteMinutes\":45,\"overtimeHoursPerWeek\":5,\"annualLeaveDays\":10,\"monthlyCost\":900},\"fund\":{\"target\":200000,\"cushionMonths\":6,\"startBalance\":38000,\"monthlySavePlan\":4000},\"categories\":{\"expense\":[{\"key\":\"food\",\"name\":\"\u5403\u996d\",\"flex\":\"flex\",\"icon\":\"bowl\"},{\"key\":\"commute\",\"name\":\"\u901a\u52e4\",\"flex\":\"fixed\",\"icon\":\"bus\"},{\"key\":\"rent\",\"name\":\"\u623f\u79df\",\"flex\":\"fixed\",\"icon\":\"home\"},{\"key\":\"coffee\",\"name\":\"\u5496\u5561\u5976\u8336\",\"flex\":\"flex\",\"icon\":\"cup\"},{\"key\":\"shop\",\"name\":\"\u8d2d\u7269\",\"flex\":\"flex\",\"icon\":\"bag\"},{\"key\":\"fun\",\"name\":\"\u5a31\u4e50\",\"flex\":\"flex\",\"icon\":\"star\"},{\"key\":\"health\",\"name\":\"\u5065\u5eb7\",\"flex\":\"fixed\",\"icon\":\"heart\"},{\"key\":\"other\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}],\"income\":[{\"key\":\"salary\",\"name\":\"\u5de5\u8d44\",\"flex\":\"fixed\",\"icon\":\"wallet\"},{\"key\":\"bonus\",\"name\":\"\u5956\u91d1\",\"flex\":\"flex\",\"icon\":\"gift\"},{\"key\":\"side\",\"name\":\"\u526f\u4e1a\",\"flex\":\"flex\",\"icon\":\"spark\"},{\"key\":\"other_in\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}]},\"updatedAt\":\"2026-09-09T01:37:48.810Z\"}],\"updatedAt\":\"2026-09-09T01:37:49.866Z\"}",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wb-mttfk4j545i7-tx",
+        "price": 1.0,
+        "description": "{\"rows\":[{\"id\":\"rmttfkbidzmhp8o\",\"type\":\"expense\",\"amount\":66,\"category\":\"food\",\"note\":\"\",\"date\":\"2026-09-09\",\"createdAt\":\"2026-09-09T01:39:19.237Z\",\"updatedAt\":\"2026-09-09T01:39:31.621Z\",\"deleted\":true}],\"updatedAt\":\"2026-09-09T01:39:31.622Z\"}",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "wb-mttfk4j545i7-st",
+        "price": 1.0,
+        "description": "{\"rows\":[{\"id\":\"default\",\"hourly\":{\"netMonthly\":12000,\"payMonths\":13,\"workDaysPerWeek\":5,\"onsiteHours\":9.5,\"commuteMinutes\":45,\"overtimeHoursPerWeek\":5,\"annualLeaveDays\":10,\"monthlyCost\":900},\"fund\":{\"target\":200000,\"cushionMonths\":6,\"startBalance\":38000,\"monthlySavePlan\":4000},\"categories\":{\"expense\":[{\"key\":\"food\",\"name\":\"\u5403\u996d\",\"flex\":\"flex\",\"icon\":\"bowl\"},{\"key\":\"commute\",\"name\":\"\u901a\u52e4\",\"flex\":\"fixed\",\"icon\":\"bus\"},{\"key\":\"rent\",\"name\":\"\u623f\u79df\",\"flex\":\"fixed\",\"icon\":\"home\"},{\"key\":\"coffee\",\"name\":\"\u5496\u5561\u5976\u8336\",\"flex\":\"flex\",\"icon\":\"cup\"},{\"key\":\"shop\",\"name\":\"\u8d2d\u7269\",\"flex\":\"flex\",\"icon\":\"bag\"},{\"key\":\"fun\",\"name\":\"\u5a31\u4e50\",\"flex\":\"flex\",\"icon\":\"star\"},{\"key\":\"health\",\"name\":\"\u5065\u5eb7\",\"flex\":\"fixed\",\"icon\":\"heart\"},{\"key\":\"other\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}],\"income\":[{\"key\":\"salary\",\"name\":\"\u5de5\u8d44\",\"flex\":\"fixed\",\"icon\":\"wallet\"},{\"key\":\"bonus\",\"name\":\"\u5956\u91d1\",\"flex\":\"flex\",\"icon\":\"gift\"},{\"key\":\"side\",\"name\":\"\u526f\u4e1a\",\"flex\":\"flex\",\"icon\":\"spark\"},{\"key\":\"other_in\",\"name\":\"\u5176\u4ed6\",\"flex\":\"flex\",\"icon\":\"dot\"}]},\"updatedAt\":\"2026-09-09T01:39:10.018Z\"}],\"updatedAt\":\"2026-09-09T01:39:10.867Z\"}",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-cf8d806c-45d5-4790-ab38-504e09f67243",
+        "price": 233.0,
+        "description": "desc-f537f290-2a86-4866-ab9a-63c67b4626bf",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-f7bfe059-fdfb-4556-a6b0-56add2089f4a",
+        "price": 506.0,
+        "description": "desc-cdbf0e4b-66d6-4830-b40a-addde11abc83",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-d9dc124e-876c-48b2-944e-415ba4fa36b9",
+        "price": 628.0,
+        "description": "desc-f2ccf5e8-ecc3-4395-b7ab-76888e00ab9d",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "New Product Update",
+        "price": 910.0,
+        "description": "A description",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-05a94022-6f70-4139-82f9-76b9be2ec9ff",
+        "price": 966.0,
+        "description": "desc-d629f84e-9e48-42c6-a165-91b4fdd70217",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-ab78eb47-7d48-4827-895e-6b259b1addf0",
+        "price": 828.0,
+        "description": "desc-b23d1f39-25e0-4d77-ae79-a0d1377de9ea",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "New Product",
+        "price": 10.0,
+        "description": "2",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "shoes",
+        "price": 19334.0,
+        "description": "kjhgfdghjrkfnruiefyrgfuwndjawbuwagduwhd",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "manu",
+        "price": 99999.0,
+        "description": "Good boy",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-86c9db71-7817-4b25-95e2-2b253e6d0ceb",
+        "price": 600.0,
+        "description": "desc-1c9933c2-6df4-4ad3-af66-d5b3dc1b0576",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-5e3f5abd-1146-48ea-b685-166a2ea6a450",
+        "price": 68.0,
+        "description": "desc-a61f0390-2df7-479f-ae8b-e4ca01d160da",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-76b02f4e-e02c-4210-86b2-8238d6f96531",
+        "price": 255.0,
+        "description": "desc-7d5cdfce-13bf-4890-a52e-bd6a9384c28a",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-63478afc-da5d-413a-9cc6-290962c74d9d",
+        "price": 681.0,
+        "description": "desc-24ddb3b5-78f7-4725-9e27-47654262ee6f",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Ne123w Product",
+        "price": 10.0,
+        "description": "A description",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "bracelet",
+        "price": 298.0,
+        "description": "hand ",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "dwygsuwjsjs",
+        "price": 232.0,
+        "description": ".dcgyqegdgwj",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-e6b43ae3-4d94-4b5b-ace8-e35cce963185",
+        "price": 594.0,
+        "description": "desc-23a2baad-b003-4989-9f93-25f5bc6dab61",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "mnxs",
+        "price": 55.0,
+        "description": "sdfc",
+        "category": "Shoes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "13k.hg1ydv",
+        "price": 99999.0,
+        "description": "wbhwb",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Test",
+        "price": 10.0,
+        "description": "Test desc",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-4b8271dd-dce0-4096-81b3-c313be63bcc7",
+        "price": 704.0,
+        "description": "desc-6dcc9d26-a364-4632-acb5-1293d5e49361",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "QA",
+        "price": 199.0,
+        "description": "d",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "QA Product 7ae081dffcfa4436befeaf5031824f42",
+        "price": 199.0,
+        "description": "Product created by C# API automation test.",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "\u041d\u0435\u0439\u0440\u043e\u0444\u043e\u0442\u043e3",
+        "price": 1000.0,
+        "description": "3 \u0444\u043e\u0442\u043e \u043d\u0430 \u044f\u0445\u0442\u0435",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-60e704a8-6b40-4008-a022-6721ebe5feab",
+        "price": 450.0,
+        "description": "desc-81de1d62-37d0-4fd7-8da6-3b23673e97b1",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Hammer",
+        "price": 100.0,
+        "description": "Weapons",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "q\u1eeb",
+        "price": 234.0,
+        "description": "df",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-d37a81f9-51bc-48b2-bc15-cf34e2d9d189",
+        "price": 179.0,
+        "description": "desc-fc7d23a5-b8b8-42f9-b441-2b98b31b21ba",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-fc274f8c-3b88-4d20-ac6b-81a83a05682c",
+        "price": 61.0,
+        "description": "desc-fddbbefe-0614-4046-9802-6572f3e57bed",
+        "category": "Furniture",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-a535abd4-f9d2-4a0a-aa57-1472bf7918ec",
+        "price": 527.0,
+        "description": "desc-7fd40190-3f42-46e0-978e-499edb33b290",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-7e5c8c53-9593-4313-86c1-ef487ff83590",
+        "price": 152.0,
+        "description": "desc-c714a3a1-d932-49ce-a35c-ac5a1320861f",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Kopi Hitam Super",
+        "price": 15.0,
+        "description": "Kopi nikmat untuk pengerjaan tugas",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Honda 23-GJHS",
+        "price": 1212.0,
+        "description": "asds",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-15e12a3a-4bd3-40d7-af3a-a0c2b3b9f568",
+        "price": 537.0,
+        "description": "desc-c9f10496-aed3-4063-8660-68d7a4b789eb",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-11749e27-894c-4c55-911f-23f4e1cd088e",
+        "price": 298.0,
+        "description": "desc-909da98f-17d2-485f-a77c-538a8a143546",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Keyboard Nebula",
+        "price": 350000.0,
+        "description": "Keyboard mechanical untuk belajar coding",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Straw Hat",
+        "price": 5000.0,
+        "description": "common straw hat",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Laptop gimang andalan",
+        "price": 350000.0,
+        "description": "Keyboard mechanical untuk belajar coding",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-5250ec89-e99e-4793-ab77-cdbe8d2e8fd5",
+        "price": 515.0,
+        "description": "desc-6e0e3eff-093b-4113-8873-3951cdadec2d",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-636d29e2-d16c-4e1d-91d2-fab215d3f4e0",
+        "price": 993.0,
+        "description": "desc-8b00af51-7f67-4f46-867a-31d33858c4f4",
+        "category": "Miscellaneous",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "Biji Sawit",
+        "price": 11.0,
+        "description": "Holy Sawit Seed",
+        "category": "Clothes",
+        "rating": null,
+        "source_address": null
+    },
+    {
+        "name": "title-c58dcd06-5bf2-4f25-b16c-c16d0e7ef27a",
+        "price": 466.0,
+        "description": "desc-e3be2962-b4a3-4dae-a115-cf768b6ce5c2",
+        "category": "Electronics",
+        "rating": null,
+        "source_address": null
+    }
+]

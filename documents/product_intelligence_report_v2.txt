@@ -1,0 +1,63 @@
+=== UNCLASSIFIED INTERNAL REPORT v2.0 ===
+Generated: 2026-07-13
+Note: Clean up this raw scraping dump before feeding into production models. Some fields might have erratic spacing or nested strings.
+
+[ITEM_START] 
+ID: #88129
+NAME: >> QuantumGlow LED Desk Lamp <<
+PRICE: USD 45.99
+RATING: 4.2/5 stars (based on 124 reviews)
+CATEGORY: Home & Office Electronics
+DESC: "Features three light modes and a flexible neck. Perfect for late-night coding or reading. Housing material is ABS plastic."
+EXTRA_INFO: Supplier backlog code: BL-992. Shipping weight is roughly 1.2lbs. Customers complain about the short power cord.
+[ITEM_END]
+
+----------------------------------------
+
+[ITEM_START]
+ID: #10294
+NAME: >> TrailBlazer Ergonomic Backpack <<
+PRICE: 89.00 USD
+RATING: 4.8 out of 5
+CATEGORY: Outdoor & Apparel
+DESC: "Water-resistant nylon with a dedicated 15-inch laptop sleeve and hidden anti-theft pocket. Breathable mesh back panel."
+MISC_DATA: {color_variants: ["Slate Gray", "Desert Olive"], warranty: "Lifetime"}
+FEEDBACK: "Best bag I've owned but the zippers are a bit stiff initially."
+[ITEM_END]
+
+----------------------------------------
+
+[ITEM_START]
+ID: #55412
+NAME: >> SipSavvy Smart Thermos <<
+PRICE: $34.50
+RATING: 3.9
+CATEGORY: Kitchenware / Gadgets
+DESC: "Vacuum insulated stainless steel flask that displays current temperature on an OLED screen cap. Battery lasts 6 months."
+SYSTEM_LOG: Ping successful. Calibration offset +0.2. 
+TAGS: [ gift-ideas, tech, eco-friendly ]
+[ITEM_END]
+
+----------------------------------------
+
+[ITEM_START]
+ID: #22910
+NAME: >> AeroStride Running Shoes <<
+PRICE: 120.00
+RATING: 4.5
+CATEGORY: Apparel -> Footwear
+DESC: "Lightweight mesh upper with responsive foam midsole cushioning designed for marathon runners and casual joggers alike."
+NOTE: Box dimensions 33x20x12cm. Return rate is under 2%.
+[ITEM_END]
+
+----------------------------------------
+
+[ITEM_START]
+ID: #77104
+NAME: >> SonicWave Mini Bluetooth Speaker <<
+PRICE: $19.99
+RATING: 4.1
+CATEGORY: Audio / Electronics
+DESC: "Pocket-sized speaker with surprisingly deep bass. IPX7 waterproof rating makes it perfect for pool parties."
+ERR_CODE: None. Warehouse Location: Aisle 4-B.
+[ITEM_END]
