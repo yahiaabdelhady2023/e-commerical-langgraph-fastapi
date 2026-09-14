@@ -1,5 +1,5 @@
 import pytest
-from app.graphs.specialist_agents.create_products_agent import build_product_agent, Product
+from app.graphs.specialist_agents.products_agent import build_product_agent, Product
 from langgraph.checkpoint.memory import MemorySaver
 from pydantic import BaseModel, Field
 
@@ -23,9 +23,6 @@ def test_product_agent():
     config = {"configurable": {"thread_id": "1"}}
 
     result = compile_graph.invoke(inputs,config)
-
-    #test if it extracted exactly 2 resources
-    # assert len(result["processed_resource_list"]) == 2
 
     #test if it has extracted data or not
     assert len(result["products_list"]) !=0

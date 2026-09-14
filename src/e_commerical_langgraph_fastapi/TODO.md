@@ -38,17 +38,18 @@ error happened due to probably change of import, have to make sure uv test, in p
 34. Unit test: Check if Python Validation Model is working for small json file ✅ -->
 
 35. fix processed_resources_list is empty (later)
-36. merge and pull request
-37. check liveserver
-38. create culture agent branch
-39. create culture agent file
-40. organise code with copilot
-41. create test cases
-    - test whole agent 
-    - test output if it is string
-    - test input format
-42. test the unit test cases manually
-43. commit and push
+36. merge and pull request ✅
+37. check liveserver ✅
+38. create culture agent branch ✅
+39. create culture agent file ✅
+40. organise code with copilot ✅
+41. create test cases ✅
+    - test whole agent  ✅
+    - test output if it is string ✅
+    - test input format ✅
+42. test the unit test cases manually ✅
+43. commit and push ✅
 44. merge and pull request
 45. check CI/CD pipeline if it succeeded or failed
 46. check liveserver
+47. remove processed_resources_list check comment in unittest and commit
