@@ -24,9 +24,6 @@ def test_product_agent():
 
     result = compile_graph.invoke(inputs,config)
 
-    #test if it extracted exactly 2 resources
-    # assert len(result["processed_resource_list"]) == 2
-
     #test if it has extracted data or not
     assert len(result["products_list"]) !=0
 
