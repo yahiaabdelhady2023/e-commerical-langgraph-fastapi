@@ -52,3 +52,4 @@ error happened due to probably change of import, have to make sure uv test, in p
 44. merge and pull request
 45. check CI/CD pipeline if it succeeded or failed
 46. check liveserver
+47. remove processed_resources_list check comment in unittest and commit

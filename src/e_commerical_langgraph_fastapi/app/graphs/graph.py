@@ -13,6 +13,7 @@ from e_commerical_langgraph_fastapi.app.graphs.general_agents.resources_agent im
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.summary_agent import build_summary_agent
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.translation_agent import build_translation_agent
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.create_products_agent import build_product_agent
+from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.culture_agent import build_culture_agent
 
 from PIL import Image
 import io
@@ -84,3 +85,20 @@ load_dotenv()
 # )
 # print("result is",result)
 # print(result["processed_resource_list"])
+
+# culture_graph = build_culture_agent()
+# culture_graph_compiled = culture_graph.compile()
+
+# inputs = {
+#     "messages": [
+#         {
+#             "role": "user", 
+#             "content": "Use this documents/china_test_10k_dataset.txt to get information about china"
+#         }
+#     ]
+# }
+# result = culture_graph_compiled.invoke(
+# inputs
+# )
+
+# print(result)
