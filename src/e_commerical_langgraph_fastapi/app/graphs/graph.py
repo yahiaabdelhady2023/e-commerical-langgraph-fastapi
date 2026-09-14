@@ -102,3 +102,8 @@ load_dotenv()
 # )
 
 # print(result)
+def main():
+    print("Hello from the graph!")
+    
+if __name__ == "__main__":
+    print("hello from graph.py")

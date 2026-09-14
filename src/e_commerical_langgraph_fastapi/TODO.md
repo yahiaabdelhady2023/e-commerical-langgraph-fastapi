@@ -46,9 +46,9 @@ error happened due to probably change of import, have to make sure uv test, in p
 41. create test cases ✅
     - test whole agent  ✅
     - test output if it is string ✅
-    - test input format
-42. test the unit test cases manually
-43. commit and push
+    - test input format ✅
+42. test the unit test cases manually ✅
+43. commit and push ✅
 44. merge and pull request
 45. check CI/CD pipeline if it succeeded or failed
 46. check liveserver
