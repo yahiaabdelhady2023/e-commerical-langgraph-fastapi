@@ -14,6 +14,7 @@ from e_commerical_langgraph_fastapi.app.graphs.general_agents.summary_agent impo
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.translation_agent import build_translation_agent
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_agent import build_product_agent
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.culture_agent import build_culture_agent
+from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_classifer_agent import build_product_classifier_agent
 
 from PIL import Image
 import io
@@ -103,7 +104,62 @@ load_dotenv()
 
 # print(result)
 def main():
-    print("Hello from the graph!")
+    # Japan Culture Summary (Approx. 1,000 characters)
+    culture_summary = (
+        "Japan's culture is a masterclass in blending ancient traditions with futuristic "
+        "innovation. At its core lies the concept of 'Wa' (harmony), which shapes social "
+        "interactions, emphasizing community, respect, and politeness over individualism. "
+        "Traditional arts like the tea ceremony (Chado), flower arranging (Ikebana), and "
+        "classical theater (Noh and Kabuki) remain deeply respected, reflecting Zen Buddhist "
+        "philosophies of mindfulness and appreciating impermanence (Wabi-Sabi). Simultaneously, "
+        "Japan is a global pop-culture powerhouse. Anime, manga, and gaming are not just "
+        "major exports but integral parts of daily life, influencing fashion, art, and language "
+        "worldwide. The cuisine, or 'Washoku'—recognized by UNESCO—focuses on seasonal, fresh "
+        "ingredients and meticulous presentation, ranging from street food like Takoyaki to elite "
+        "Sushi. Shintoism and Buddhism coexist seamlessly, with modern citizens celebrating Shinto "
+        "festivals (Matsuri) and visiting shrines for New Year, while adopting Buddhist rituals "
+        "for funerals. This unique cultural duality creates a society where high-tech bullet trains "
+        "speed past centuries-old wooden temples, and neon-lit skyscrapers stand alongside quiet, "
+        "moss-covered stone gardens."
+    )
+
+    # Japan Articles & Tech/Economy Summary (Approx. 1,000 characters)
+    articles_summary = (
+        "Recent headlines from Japan highlight significant shifts across its economic landscape "
+        "and technology sector. Economically, the Bank of Japan continues to navigate a delicate "
+        "transition away from its long-standing ultra-loose monetary policy, responding to steady "
+        "wage growth and mild inflation. Despite persistent demographic headwinds from an aging "
+        "population, Tokyo's financial markets have shown robust resilience, attracting surging "
+        "foreign investment. On the technological front, Japan is accelerating its domestic "
+        "semiconductor manufacturing capabilities, backed by massive government subsidies aimed at "
+        "rebuilding its chip-making dominance and securing global supply chains. Innovation in "
+        "artificial intelligence is booming, with Japanese tech giants focusing on specialized AI "
+        "models designed for automation, eldercare robotics, and smart manufacturing to counter "
+        "labor shortages. Green technology is another major frontier; automakers are ramping up "
+        "investments in next-generation solid-state batteries and hydrogen fuel cells, aiming to "
+        "revolutionize the global EV market. Meanwhile, smart city initiatives in Osaka and Tokyo "
+        "are integrating IoT and 5G networks to optimize public transit and energy efficiency, "
+        "solidifying Japan's status as a leader in sustainable urban tech."
+    )
+
+    # Constructing the final message dictionary
+    msg = {
+        "culture_summary": culture_summary,
+        "articles_summary": articles_summary
+    }
+    product_classifer_graph = build_product_classifier_agent()
+    product_classifer_graph_compiled = product_classifer_graph.compile()
+
+    # Example print to verify lengths
+    print(f"Culture Summary Length: {len(msg['culture_summary'])} characters")
+    print(f"Articles Summary Length: {len(msg['articles_summary'])} characters")
+
+    msg={"culture_summary":culture_summary,"articles_summary":articles_summary}
+
+    result = product_classifer_graph_compiled.invoke(
+    msg
+    )
+    print(result)
 
 if __name__ == "__main__":
-    print("hello from graph.py")
+    main()

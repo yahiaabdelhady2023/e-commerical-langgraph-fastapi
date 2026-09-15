@@ -46,3 +46,18 @@ pythonpath=[
     "src/e_commerical_langgraph_fastapi"
 ]
 7. to run a specific unittest using uv run pytest, you need to pass full path not just the relative name, if relative name doesn't work run full path
+
+# 9/14/2026
+1. merged and created pull request for products_agent ✅
+2. renamed create_products_agent.py to products_agent for name convention and tested unittest cases ✅
+3. created branch for culture_agent ✅
+4. created code and organised code for culture_agent ✅
+5. created test cases in tests folder ✅
+6. merged and created pull request ✅
+7. learnt that i can add shortcut to uv, in pyproject.toml i added graph_shortcut module, which i can simply write uv run graph_shortcut and it will run graph.py for me, requirements way to write everything in that file graph.py around main() or some function
+8. learnt that pythonpath=[
+    "src/e_commerical_langgraph_fastapi",
+] , pythonpath are for dealing with import issues not executing, if i add graph.py full path here uv run won't be able to find it , it is only
+for importing path resolving issues, best i can do is uv run full graph.py path or best approach which i have done above is uv run graph_shortcut
+9. learnt that culture agent in my code is self-sufficient which means it can run standalone without using any other agent, as it  has resources agents to fetch resources online
+10. remove processed_resources_list check comment in unittest and commit ✅
