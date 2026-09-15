@@ -13,7 +13,7 @@ from e_commerical_langgraph_fastapi.app.graphs.general_agents.resources_agent im
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.summary_agent import build_summary_agent
 from e_commerical_langgraph_fastapi.app.graphs.general_agents.translation_agent import build_translation_agent
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_agent import build_product_agent
-from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.culture_agent import build_culture_agent
+from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.article_synthesizer import build_article_synthesizer
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_classifer_agent import build_product_classifier_agent
 
 from PIL import Image
@@ -87,8 +87,8 @@ load_dotenv()
 # print("result is",result)
 # print(result["processed_resource_list"])
 
-# culture_graph = build_culture_agent()
-# culture_graph_compiled = culture_graph.compile()
+# article_synthesizer_graph = build_article_synthesizer()
+# article_synthesizer_graph_compiled = article_synthesizer_graph.compile()
 
 # inputs = {
 #     "messages": [
@@ -98,8 +98,8 @@ load_dotenv()
 #         }
 #     ]
 # }
-# result = culture_graph_compiled.invoke(
-# inputs
+# result = article_synthesizer_graph_compiled.invoke(
+#     inputs
 # )
 
 # print(result)
