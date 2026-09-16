@@ -20,7 +20,8 @@ GENERAL_LLM = init_chat_model(model="gemini-3.1-flash-lite", model_provider="goo
 class ProductClassifierState(TypedDict):
     """State carried through the product-selection workflow."""
 
-    product_list: list[str]
+    product_name_list: list[str]
+    product_info_list: list[str]
     culture_summary: str
     articles_summary: str
     top_candidates: list[str]
@@ -77,7 +78,8 @@ def fetch_products(state: ProductClassifierState):
         product_catalog = json.load(file)
 
     product_names = [product.get("name", "") for product in product_catalog if product.get("name")]
-    return {"product_list": product_names}
+
+    return {"product_name_list": product_names, "product_info_list":str(product_catalog)}
 
 
 ####################################################################
@@ -86,13 +88,15 @@ def fetch_products(state: ProductClassifierState):
 
 def select_candidate_products(state: ProductClassifierState):
     """Choose the best product candidates based on culture and market signals."""
-    product_list = state["product_list"]
+    product_name_list = state["product_name_list"]
     culture_summary = state["culture_summary"]
     articles_summary = state["articles_summary"]
-
+    product_info_list = state["product_info_list"]
     prompt = (
-        "Product list:\n"
-        f"{product_list}\n\n"
+        "Product name list:\n"
+        f"{product_name_list}\n\n"
+        "Product full info list:\n"
+        f"{product_info_list}\n\n"
         "Culture summary:\n"
         f"{culture_summary}\n\n"
         "Articles summary:\n"
@@ -107,14 +111,17 @@ def select_candidate_products(state: ProductClassifierState):
 
 def evaluate_product_candidates(state: ProductClassifierState):
     """Assess the current candidate list and provide constructive feedback."""
-    product_list = state["product_list"]
+    product_name_list = state["product_name_list"]
+    product_info_list = state["product_info_list"]
     culture_summary = state["culture_summary"]
     articles_summary = state["articles_summary"]
     top_candidates = state["top_candidates"]
 
     prompt = (
         "Product list:\n"
-        f"{product_list}\n\n"
+        f"{product_name_list}\n\n"
+        "Product full info list:\n"
+        f"{product_info_list}\n\n"
         "Culture summary:\n"
         f"{culture_summary}\n\n"
         "Articles summary:\n"
@@ -132,14 +139,18 @@ def evaluate_product_candidates(state: ProductClassifierState):
 
 def improve_product_candidates(state: ProductClassifierState):
     """Refine the shortlist using the feedback from the previous selection round."""
-    product_list = state["product_list"]
+    product_name_list = state["product_name_list"]
+    product_info_list = state["product_info_list"]
+
     culture_summary = state["culture_summary"]
     articles_summary = state["articles_summary"]
     feedback = state["feedback"]
 
     prompt = (
         "Product list:\n"
-        f"{product_list}\n\n"
+        f"{product_name_list}\n\n"
+        "Product full info list:\n"
+        f"{product_info_list}\n\n"
         "Culture summary:\n"
         f"{culture_summary}\n\n"
         "Articles summary:\n"
