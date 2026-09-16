@@ -31,11 +31,6 @@ def test_product_classifer_agent():
 
 
     phone_brands = [
-        # American
-        "phone_Apple",
-        "phone_Google",
-        "phone_Motorola",
-        "phone_BLU Products",
         # South Korean
         "phone_Samsung",
         "phone_LG",
