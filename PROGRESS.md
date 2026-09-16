@@ -61,3 +61,18 @@ pythonpath=[
 for importing path resolving issues, best i can do is uv run full graph.py path or best approach which i have done above is uv run graph_shortcut
 9. learnt that culture agent in my code is self-sufficient which means it can run standalone without using any other agent, as it  has resources agents to fetch resources online
 10. remove processed_resources_list check comment in unittest and commit ✅
+
+# 9/15/2026
+
+1. create products_classifer_agent branch ✅
+2. copy code from old repo ✅
+3. organise code with copilot ✅
+4. test in graph.py ✅
+5. make note of input and output format and key names ✅
+6. write unittest case ✅
+7. test unittest case manaully ✅
+8. push ✅
+9. merge and pull request ✅ 
+10. check CI/CD pipeline and liveserver ✅
+11. remove quick folder ✅
+12. rename culture agent to article_synthesizer ✅

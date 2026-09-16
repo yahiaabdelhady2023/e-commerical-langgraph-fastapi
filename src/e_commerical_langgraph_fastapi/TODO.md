@@ -55,7 +55,7 @@ error happened due to probably change of import, have to make sure uv test, in p
 47. remove processed_resources_list check comment in unittest and commit  ✅ -->
 <!-- 48. renamed create_products_agent to product_agent ✅ -->
 
-49. create products_classifer_agent branch ✅
+<!-- 49. create products_classifer_agent branch ✅
 50. copy code from old repo ✅
 51. organise code with copilot ✅
 52. test in graph.py ✅
@@ -66,6 +66,16 @@ error happened due to probably change of import, have to make sure uv test, in p
 57. merge and pull request ✅ 
 58. check CI/CD pipeline and liveserver ✅
 59. remove quick folder ✅
-60. rename culture agent to article_synthesizer ✅
-61. test if system still works
-62. 
+60. rename culture agent to article_synthesizer ✅ -->
+
+
+61. merge and pull request
+62. observe liveserver + build
+`cls = <class 'google.genai.errors.APIError'>, status_code = 503
+response_json = {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}`
+
+63. this error happened on CI/CD, try to make test cases better or more efficient and
+avoid doing big testing on huge system like that if possible
+64. do research on standard way of testing langgraph graphs without spending too much
+tokens
+65. decide to-do list based on research
