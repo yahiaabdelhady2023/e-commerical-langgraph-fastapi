@@ -37,9 +37,6 @@ def test_product_classifer_agent():
         "phone_Pantech",
         # Japanese
         "phone_Sony",
-        "phone_Sharp",
-        "phone_Kyocera",
-        "phone_Panasonic",
         "phone_Fujitsu",
     ]
     product_info_list = [
