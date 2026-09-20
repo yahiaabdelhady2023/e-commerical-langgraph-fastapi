@@ -6,5 +6,29 @@
         "category": "Audio",
         "rating": 4.1,
         "source_address": null
+    },
+    {
+        "name": "LuminaGlow Smart LED Bulb",
+        "price": 14.50,
+        "description": "Color-changing smart bulb compatible with Alexa and Google Assistant. 800 lumens.",
+        "category": "Smart Home",
+        "rating": 4.5,
+        "source_address": null
+    },
+    {
+        "name": "AeroCharge Wireless Charging Pad",
+        "price": 24.99,
+        "description": "15W fast wireless charging pad with non-slip surface and LED indicator.",
+        "category": "Accessories",
+        "rating": 4.3,
+        "source_address": null
+    },
+    {
+        "name": "PulseFit Fitness Tracker",
+        "price": 39.99,
+        "description": "Lightweight fitness tracker with heart rate monitor, step counter, and sleep tracking.",
+        "category": "Wearables",
+        "rating": 4.0,
+        "source_address": null
     }
 ]
