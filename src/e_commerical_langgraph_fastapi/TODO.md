@@ -69,13 +69,10 @@ error happened due to probably change of import, have to make sure uv test, in p
 60. rename culture agent to article_synthesizer ✅ -->
 
 
-61. merge and pull request
-62. observe liveserver + build
-`cls = <class 'google.genai.errors.APIError'>, status_code = 503
-response_json = {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}`
-
-63. this error happened on CI/CD, try to make test cases better or more efficient and
-avoid doing big testing on huge system like that if possible
-64. do research on standard way of testing langgraph graphs without spending too much
-tokens
-65. decide to-do list based on research
+61. for graph.py fill products_name_list
+62. ensure they match with products.json
+63. test marketing agent manually in graph.y
+64. write unit test
+65. test unit test
+66. merge and pull request
+67. check if liveserver + CI/CD works

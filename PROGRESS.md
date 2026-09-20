@@ -76,3 +76,19 @@ for importing path resolving issues, best i can do is uv run full graph.py path 
 10. check CI/CD pipeline and liveserver ✅
 11. remove quick folder ✅
 12. rename culture agent to article_synthesizer ✅
+
+
+# 9/16/2026
+
+1. fixed bug regarding github, it happened when i tried to merge and pull request with branch to main, it failed because my local repo didn't
+sync with remote one, remote one was ahead of mine, next time i need to do git pull origin main before i merge, however i tackled this issue via
+git config pull.rebase false, so this statement says merge the two divergent commits, and see if they can be merged successfully, and add commit,
+aka treat them as a new single commit, rebase false means do not change history of commits, keep it as it is, so always do this it is safest option and standard option but to avoid running into this issue ensure you always do git pull origin main to make sure repo remotely == local repo
+2. merged artciles_synthesizer branch change to main  ✅
+3. added mirror bug fix branch and merged it, it removed quick folder used for testing ✅
+4. product classifer agent underwent improvements, instead of just giving products_name_lists, with culture summary and articles summary 
+it is now given products_name_list alongside information regarding items like description, price, etc... and rating ✅
+5. tweaked test for product classifer agent ✅
+6. created marketing agent branch ✅
+7. organised code for marketing agent ✅
+8. changed output variable name from `processed_candidates_list` to something more meaningful `marketing_scripts` ✅
