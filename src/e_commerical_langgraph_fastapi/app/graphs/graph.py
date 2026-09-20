@@ -15,6 +15,7 @@ from e_commerical_langgraph_fastapi.app.graphs.general_agents.translation_agent 
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_agent import build_product_agent
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.article_synthesizer import build_article_synthesizer
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_classifer_agent import build_product_classifier_agent
+from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.marketing_agent import build_marketing_agent
 
 from PIL import Image
 import io
@@ -123,7 +124,7 @@ def main():
         "moss-covered stone gardens."
     )
 
-    # Japan Articles & Tech/Economy Summary (Approx. 1,000 characters)
+    # # Japan Articles & Tech/Economy Summary (Approx. 1,000 characters)
     articles_summary = (
         "Recent headlines from Japan highlight significant shifts across its economic landscape "
         "and technology sector. Economically, the Bank of Japan continues to navigate a delicate "
@@ -142,24 +143,35 @@ def main():
         "solidifying Japan's status as a leader in sustainable urban tech."
     )
 
-    # Constructing the final message dictionary
-    msg = {
-        "culture_summary": culture_summary,
-        "articles_summary": articles_summary
-    }
-    product_classifer_graph = build_product_classifier_agent()
-    product_classifer_graph_compiled = product_classifer_graph.compile()
+    # # Constructing the final message dictionary
+    # msg = {
+    #     "culture_summary": culture_summary,
+    #     "articles_summary": articles_summary,
+    # }
+    # product_classifer_graph = build_product_classifier_agent()
+    # product_classifer_graph_compiled = product_classifer_graph.compile()
 
-    # Example print to verify lengths
-    print(f"Culture Summary Length: {len(msg['culture_summary'])} characters")
-    print(f"Articles Summary Length: {len(msg['articles_summary'])} characters")
+    # # Example print to verify lengths
+    # print(f"Culture Summary Length: {len(msg['culture_summary'])} characters")
+    # print(f"Articles Summary Length: {len(msg['articles_summary'])} characters")
 
-    msg={"culture_summary":culture_summary,"articles_summary":articles_summary}
+    # msg={"culture_summary":culture_summary,"articles_summary":articles_summary}
 
-    result = product_classifer_graph_compiled.invoke(
+    # result = product_classifer_graph_compiled.invoke(
+    # msg
+    # )
+    # print(result)
+
+    top_candidates=["SonicWave Mini Bluetooth Speaker","LuminaGlow Smart LED Bulb"
+                    ,"TrailBlazer Ergonomic Backpack"
+                    ,"PulseFit Fitness Tracker"]
+    msg={"culture_summary":culture_summary,"articles_summary":articles_summary,"top_candidates":top_candidates}
+    marketing_agent = build_marketing_agent()
+    marketing_graph_compiled = marketing_agent.compile()
+    result = marketing_graph_compiled.invoke(
     msg
     )
-    print(result)
-
+    result
+    print(result["marketing_scripts"])
 if __name__ == "__main__":
     main()
