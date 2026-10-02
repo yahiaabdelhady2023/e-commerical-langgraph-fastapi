@@ -16,7 +16,7 @@ from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_agent 
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.article_synthesizer import build_article_synthesizer
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.products_classifer_agent import build_product_classifier_agent
 from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.marketing_agent import build_marketing_agent
-
+from e_commerical_langgraph_fastapi.app.graphs.specialist_agents.law_agent import build_law_agent, save_law_agent_graph_png
 from PIL import Image
 import io
 
@@ -104,74 +104,104 @@ load_dotenv()
 # )
 
 # print(result)
+# def main():
+#     # Japan Culture Summary (Approx. 1,000 characters)
+#     culture_summary = (
+#         "Japan's culture is a masterclass in blending ancient traditions with futuristic "
+#         "innovation. At its core lies the concept of 'Wa' (harmony), which shapes social "
+#         "interactions, emphasizing community, respect, and politeness over individualism. "
+#         "Traditional arts like the tea ceremony (Chado), flower arranging (Ikebana), and "
+#         "classical theater (Noh and Kabuki) remain deeply respected, reflecting Zen Buddhist "
+#         "philosophies of mindfulness and appreciating impermanence (Wabi-Sabi). Simultaneously, "
+#         "Japan is a global pop-culture powerhouse. Anime, manga, and gaming are not just "
+#         "major exports but integral parts of daily life, influencing fashion, art, and language "
+#         "worldwide. The cuisine, or 'Washoku'—recognized by UNESCO—focuses on seasonal, fresh "
+#         "ingredients and meticulous presentation, ranging from street food like Takoyaki to elite "
+#         "Sushi. Shintoism and Buddhism coexist seamlessly, with modern citizens celebrating Shinto "
+#         "festivals (Matsuri) and visiting shrines for New Year, while adopting Buddhist rituals "
+#         "for funerals. This unique cultural duality creates a society where high-tech bullet trains "
+#         "speed past centuries-old wooden temples, and neon-lit skyscrapers stand alongside quiet, "
+#         "moss-covered stone gardens."
+#     )
+
+#     # # Japan Articles & Tech/Economy Summary (Approx. 1,000 characters)
+#     articles_summary = (
+#         "Recent headlines from Japan highlight significant shifts across its economic landscape "
+#         "and technology sector. Economically, the Bank of Japan continues to navigate a delicate "
+#         "transition away from its long-standing ultra-loose monetary policy, responding to steady "
+#         "wage growth and mild inflation. Despite persistent demographic headwinds from an aging "
+#         "population, Tokyo's financial markets have shown robust resilience, attracting surging "
+#         "foreign investment. On the technological front, Japan is accelerating its domestic "
+#         "semiconductor manufacturing capabilities, backed by massive government subsidies aimed at "
+#         "rebuilding its chip-making dominance and securing global supply chains. Innovation in "
+#         "artificial intelligence is booming, with Japanese tech giants focusing on specialized AI "
+#         "models designed for automation, eldercare robotics, and smart manufacturing to counter "
+#         "labor shortages. Green technology is another major frontier; automakers are ramping up "
+#         "investments in next-generation solid-state batteries and hydrogen fuel cells, aiming to "
+#         "revolutionize the global EV market. Meanwhile, smart city initiatives in Osaka and Tokyo "
+#         "are integrating IoT and 5G networks to optimize public transit and energy efficiency, "
+#         "solidifying Japan's status as a leader in sustainable urban tech."
+#     )
+
+#     # # Constructing the final message dictionary
+#     # msg = {
+#     #     "culture_summary": culture_summary,
+#     #     "articles_summary": articles_summary,
+#     # }
+#     # product_classifer_graph = build_product_classifier_agent()
+#     # product_classifer_graph_compiled = product_classifer_graph.compile()
+
+#     # # Example print to verify lengths
+#     # print(f"Culture Summary Length: {len(msg['culture_summary'])} characters")
+#     # print(f"Articles Summary Length: {len(msg['articles_summary'])} characters")
+
+#     # msg={"culture_summary":culture_summary,"articles_summary":articles_summary}
+
+#     # result = product_classifer_graph_compiled.invoke(
+#     # msg
+#     # )
+#     # print(result)
+
+#     top_candidates=["SonicWave Mini Bluetooth Speaker","LuminaGlow Smart LED Bulb"
+#                     ,"TrailBlazer Ergonomic Backpack"
+#                     ,"PulseFit Fitness Tracker"]
+#     msg={"culture_summary":culture_summary,"articles_summary":articles_summary,"top_candidates":top_candidates}
+#     marketing_agent = build_marketing_agent()
+#     marketing_graph_compiled = marketing_agent.compile()
+#     result = marketing_graph_compiled.invoke(
+#     msg
+#     )
+#     result
+#     print(result["marketing_scripts"])
 def main():
-    # Japan Culture Summary (Approx. 1,000 characters)
-    culture_summary = (
-        "Japan's culture is a masterclass in blending ancient traditions with futuristic "
-        "innovation. At its core lies the concept of 'Wa' (harmony), which shapes social "
-        "interactions, emphasizing community, respect, and politeness over individualism. "
-        "Traditional arts like the tea ceremony (Chado), flower arranging (Ikebana), and "
-        "classical theater (Noh and Kabuki) remain deeply respected, reflecting Zen Buddhist "
-        "philosophies of mindfulness and appreciating impermanence (Wabi-Sabi). Simultaneously, "
-        "Japan is a global pop-culture powerhouse. Anime, manga, and gaming are not just "
-        "major exports but integral parts of daily life, influencing fashion, art, and language "
-        "worldwide. The cuisine, or 'Washoku'—recognized by UNESCO—focuses on seasonal, fresh "
-        "ingredients and meticulous presentation, ranging from street food like Takoyaki to elite "
-        "Sushi. Shintoism and Buddhism coexist seamlessly, with modern citizens celebrating Shinto "
-        "festivals (Matsuri) and visiting shrines for New Year, while adopting Buddhist rituals "
-        "for funerals. This unique cultural duality creates a society where high-tech bullet trains "
-        "speed past centuries-old wooden temples, and neon-lit skyscrapers stand alongside quiet, "
-        "moss-covered stone gardens."
-    )
+    script_list = [
+        """
+        Product: KumoBrew Smart Kettle
 
-    # # Japan Articles & Tech/Economy Summary (Approx. 1,000 characters)
-    articles_summary = (
-        "Recent headlines from Japan highlight significant shifts across its economic landscape "
-        "and technology sector. Economically, the Bank of Japan continues to navigate a delicate "
-        "transition away from its long-standing ultra-loose monetary policy, responding to steady "
-        "wage growth and mild inflation. Despite persistent demographic headwinds from an aging "
-        "population, Tokyo's financial markets have shown robust resilience, attracting surging "
-        "foreign investment. On the technological front, Japan is accelerating its domestic "
-        "semiconductor manufacturing capabilities, backed by massive government subsidies aimed at "
-        "rebuilding its chip-making dominance and securing global supply chains. Innovation in "
-        "artificial intelligence is booming, with Japanese tech giants focusing on specialized AI "
-        "models designed for automation, eldercare robotics, and smart manufacturing to counter "
-        "labor shortages. Green technology is another major frontier; automakers are ramping up "
-        "investments in next-generation solid-state batteries and hydrogen fuel cells, aiming to "
-        "revolutionize the global EV market. Meanwhile, smart city initiatives in Osaka and Tokyo "
-        "are integrating IoT and 5G networks to optimize public transit and energy efficiency, "
-        "solidifying Japan's status as a leader in sustainable urban tech."
-    )
+        Meet the KumoBrew Smart Kettle, the only kettle in Japan that guarantees
+        perfect water for every tea and uses 70% less electricity than any other
+        kettle. Buy today and enjoy a lifetime warranty, no questions asked.
+        """,
+        """
+        Product: HoshiGlow Sleep Lamp
 
-    # # Constructing the final message dictionary
-    # msg = {
-    #     "culture_summary": culture_summary,
-    #     "articles_summary": articles_summary,
-    # }
-    # product_classifer_graph = build_product_classifier_agent()
-    # product_classifer_graph_compiled = product_classifer_graph.compile()
+        Fall asleep in minutes with the HoshiGlow Sleep Lamp. Our clinically
+        proven light cures insomnia in three nights, has no side effects, and
+        works for everyone. If it does not, we will refund your purchase under
+        our unlimited money-back guarantee.
+        """,
+    ]
+    inputs={
+    "messages": [
+        {"role": "user", "content": "Extract legal guidance from this documents/japanese_commercial_law_guide.txt"}
+    ],
+    "script_list": script_list
+    }
+    law_graph = build_law_agent()
+    law_agent_compiled = law_graph.compile()
+    result = law_agent_compiled.invoke(inputs)
+    print(result["final_script_list"])
+    print(len(result["final_script_list"]))
 
-    # # Example print to verify lengths
-    # print(f"Culture Summary Length: {len(msg['culture_summary'])} characters")
-    # print(f"Articles Summary Length: {len(msg['articles_summary'])} characters")
-
-    # msg={"culture_summary":culture_summary,"articles_summary":articles_summary}
-
-    # result = product_classifer_graph_compiled.invoke(
-    # msg
-    # )
-    # print(result)
-
-    top_candidates=["SonicWave Mini Bluetooth Speaker","LuminaGlow Smart LED Bulb"
-                    ,"TrailBlazer Ergonomic Backpack"
-                    ,"PulseFit Fitness Tracker"]
-    msg={"culture_summary":culture_summary,"articles_summary":articles_summary,"top_candidates":top_candidates}
-    marketing_agent = build_marketing_agent()
-    marketing_graph_compiled = marketing_agent.compile()
-    result = marketing_graph_compiled.invoke(
-    msg
-    )
-    result
-    print(result["marketing_scripts"])
 if __name__ == "__main__":
     main()

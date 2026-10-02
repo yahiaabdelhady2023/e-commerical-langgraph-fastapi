@@ -69,10 +69,15 @@ error happened due to probably change of import, have to make sure uv test, in p
 60. rename culture agent to article_synthesizer ✅ -->
 
 
-61. for graph.py fill products_name_list
-62. ensure they match with products.json
-63. test marketing agent manually in graph.y
-64. write unit test
-65. test unit test
-66. merge and pull request
-67. check if liveserver + CI/CD works
+<!-- 61. for graph.py fill products_name_list ✅
+62. ensure they match with products.json ✅
+63. test marketing agent manually in graph.y ✅
+64. write unit test ✅
+65. test unit test ✅
+66. merge and pull request ✅
+67. check if liveserver + CI/CD works ✅ -->
+
+62. fix langgraph.errors.InvalidUpdateError: At key 'current_script': Can receive only one value per step. Use an Annotated key to handle multiple values. probably use reducer , if test passes it is done
+63. understand workflow of graph, write summary of what you understand for each step, check with gemini
+64. write unittest and test ,if it passes you finished this
+65. merge and pull request, and check CI/CD and liveserver if all pass this ticket is done
